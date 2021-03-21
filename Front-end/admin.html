@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Noah MacRitchie & Andrey Goryelov</title>
+        <meta name="author" content="Noah MacRitchie">
+        <meta name="description" content="Collection of BCIT labs">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/admin.css" rel="stylesheet">
+      </head>
+
+    <body>
+        <!-- Template -->
+        <div class="invis">
+            <div class="question-wrapper" id="template_question">
+                <h3 class="question-title">Question 1</h3>
+                <div><button class="btn-save" onclick="saveQuestions(this)">Save Question changes</button></div>
+                <textarea class="question-text" rows="5"></textarea>
+                <div class="answers">
+                    <span class="answer-title">Answers *</span>
+                </div>
+                
+            </div>
+            
+        </div>
+        <h1>Admin</h1>
+        <div id="autoSave"></div>
+        <div class="main-content" id="main-content">
+            
+        </div>
+        <div>  
+            <select name="Number of Answers" id="num-answers">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+          </select>
+          <button class="btn-add" onclick="addQuestion()">Add</button>
+        </div>
+        
+        <a href="./" > <button id="back-button">Back</button></a>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/shared.js"></script>
+        <script src="./js/admin.js"></script>
+    </body>
+</html>

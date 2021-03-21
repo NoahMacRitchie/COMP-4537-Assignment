@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Noah MacRitchie & Andrey Goryelov</title>
+        <meta name="author" content="Noah MacRitchie">
+        <meta name="description" content="Collection of BCIT labs">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/user.css" rel="stylesheet">
+      </head>
+
+    <body>
+        <!-- Template -->
+        <div class="invis">
+            <div class="question-wrapper" id="template_question">
+                <h3 class="question-title">Question 1</h3>
+                <div class="question-text" rows="5"></div>
+                <div class="answers">
+                    <span class="answer-title">Answers *</span>
+                </div>
+            </div>
+        </div>
+        <h1>User</h1>
+        <div id="score"></div>
+        <div class="main-content" id="main-content">
+            
+        </div>
+        <button class="btn-submit" onclick="gradeQuestions()">Submit</button><br>
+        <a href="./" > <button id="back-button">Back</button></a>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/shared.js"></script>
+        <script src="./js/user.js"></script>
+
+    </body>
+</html>
